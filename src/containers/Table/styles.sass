@@ -1,0 +1,37 @@
+$font-stack: Helvetica, sans-serif
+$primary-color: #333
+
+body
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font: 100% $font-stack
+  color: $primary-color
+
+.containers
+  display: flex
+  justify-content: center
+  padding: 100px
+
+.dx-toolbar-items-container
+  background-color: #2a0150f7 !important
+  padding: 30px
+
+.dx-treelist .dx-treelist-content .dx-treelist-table .dx-row .dx-command-edit-with-icons .dx-link
+  font-size: 25px
+
+.dx-treelist .dx-treelist-content .dx-treelist-table .dx-row .dx-command-edit-with-icons .dx-link
+  color: #b2b2b2
+
+.dx-link.dx-link-edit.dx-icon-edit.dx-link-icon
+  &:hover
+    color: #3498db !important
+.dx-link.dx-link-delete.dx-icon-trash.dx-link-icon
+  &:hover
+    color: #c0392b !important
+.dx-link.dx-link-cancel.dx-icon-undo.dx-link-icon
+  &:hover
+    color: #555555 !important
+.dx-link.dx-link-save.dx-icon-save.dx-link-icon
+  &:hover
+    color: #8e44ad !important
