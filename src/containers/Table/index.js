@@ -2,32 +2,19 @@
 import React from 'react';
 import {
   TreeList,
-  StateStoring,
-  FilterRow,
-  FilterPanel,
-  HeaderFilter,
-  Editing,
-  Column,
-  RequiredRule,
-  PatternRule,
-  Lookup,
-  Button,
-  Scrolling,
-  Paging,
-  Pager,
-  StringLengthRule
 } from 'devextreme-react/tree-list';
 import DevMain from "../../components/DevMain"
 import { dataSource } from "./dataSource"
 import './styles.sass'
 import DevStatus from '../../components/DevStatus/index.js';
 import DevButtons from '../../components/DevButtons';
-import DevName from '../../components/DevName';
-const allowedPageSizes = [5, 10, 20];
+// import DevName from '../../components/DevName';
+import DevTreeLIstFeatures from '../../components/DevTreeLIstFeatures';
+// const allowedPageSizes = [5, 10, 20];
 
-const filterValue = ['Name'];
+// const filterValue = ['Name'];
 
-const expandedRowKeys = [1, 2, 3, 4, 5];
+// const expandedRowKeys = [1, 2, 3, 4, 5];
 
 
 class Table extends React.Component {
@@ -56,25 +43,9 @@ class Table extends React.Component {
               }
             }}
           >
-            <StateStoring enabled={true} type="localStorage" storageKey="treeListStorage" />
-            <FilterRow visible={true} />
-            <FilterPanel visible={true} />
-            <HeaderFilter visible={true} />
-            <Scrolling
-              mode="standard" />
-            <Paging
-              enabled={true}
-              defaultPageSize={10} />
-            <Pager
-              showPageSizeSelector={true}
-              allowedPageSizes={allowedPageSizes}
-              showInfo={true} />
-            <Editing
-              allowUpdating={true}
-              allowDeleting={true}
-              allowAdding={true}
-              mode="row" />
-        
+  
+            {DevTreeLIstFeatures}
+            {/* {DevName} */}
             {DevMain}
             {DevStatus}
             {DevButtons}
