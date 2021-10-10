@@ -8,13 +8,8 @@ import { dataSource } from "./dataSource"
 import './styles.sass'
 import DevStatus from '../../components/DevStatus/index.js';
 import DevButtons from '../../components/DevButtons';
-// import DevName from '../../components/DevName';
+import DevName from '../../components/DevName';
 import DevTreeLIstFeatures from '../../components/DevTreeLIstFeatures';
-// const allowedPageSizes = [5, 10, 20];
-
-// const filterValue = ['Name'];
-
-// const expandedRowKeys = [1, 2, 3, 4, 5];
 
 
 class Table extends React.Component {
@@ -30,7 +25,6 @@ class Table extends React.Component {
             id="employees"
             dataSource={dataSource}
             showRowLines={true}
-            showBorders={true}
             columnAutoWidth={true}
             keyExpr="id"
             parentIdExpr="parent_id"
@@ -42,10 +36,13 @@ class Table extends React.Component {
                 e.data.parent_id = undefined
               }
             }}
+            showBorders={false}
+            focusedRowEnabled={false}
+            columnHidingEnabled={true}
           >
   
             {DevTreeLIstFeatures}
-            {/* {DevName} */}
+            {DevName}
             {DevMain}
             {DevStatus}
             {DevButtons}
