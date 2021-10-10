@@ -2,8 +2,8 @@ import { Column } from "devextreme-react/tree-list"
 import { Template } from "devextreme-react/core/template"
 import Switch from "devextreme-react/switch"
 
-function StatusCell(options) {
-  return options.data?.status ? "Active" : "Deactive"
+function statusAction(data) {
+  return data.data?.status ? "Active" : "Deactive"
 }
 
 function renderSwitch(cellInfo) {
@@ -25,6 +25,6 @@ export const DevStatus = [
     width={300}
     editCellRender={renderSwitch}
   />,
-  <Template name="employeeTemplate" render={StatusCell} />,
+  <Template name="employeeTemplate" render={statusAction} />,
 ]
 export default DevStatus;

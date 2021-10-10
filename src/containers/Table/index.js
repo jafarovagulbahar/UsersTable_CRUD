@@ -17,9 +17,9 @@ import { TreeList,
          StringLengthRule 
         } from 'devextreme-react/tree-list';
 
-
 import './styles.sass'
 import DevStatus from '../../components/DevStatus/index.js';
+import DevButtons from '../../components/DevButtons';
 const allowedPageSizes = [5, 10, 20];
 
 const filterValue = ['Name'];
@@ -83,20 +83,7 @@ class Table extends React.Component {
                 valueExpr="ID"
                 displayExpr="Name" />
             </Column>
-            <Column type="buttons" >
-              <Button name="edit"
-                icon='edit'
-                className="aa"
-                type={'edit'}
-                text={'edit'} />
-              <Button name="delete"
-                icon={'trash'}
-                type={'trash'}
-                text={'trash'} />
-              <Button name="save" icon="save" />
-              <Button name="cancel" icon="undo" />
-
-            </Column>
+           {DevButtons}
           </TreeList>
         </div>
       </div>
