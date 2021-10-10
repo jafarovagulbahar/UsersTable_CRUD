@@ -18,18 +18,13 @@ import { TreeList,
         } from 'devextreme-react/tree-list';
 
 
-import { employees } from '../../data.js';
 import './styles.sass'
+import DevStatus from '../../components/DevStatus/index.js';
 const allowedPageSizes = [5, 10, 20];
 
 const filterValue = ['Name'];
 
 const expandedRowKeys = [1, 2, 3, 4, 5];
-
-const headDataSource = {
-  store: employees,
-  sort: 'Name'
-};
 
 
 class Table extends React.Component {
@@ -43,7 +38,7 @@ class Table extends React.Component {
 
           <TreeList
             id="employees"
-            dataSource={employees}
+            // dataSource={employees}
             defaultExpandedRowKeys={expandedRowKeys}
             defaultFilterValue={filterValue}
             showBorders={true}
@@ -78,12 +73,13 @@ class Table extends React.Component {
               <PatternRule message="Do not use digits in the Name"
                 pattern={/^[^0-9]+$/} />
             </Column>
+            {DevStatus}
             <Column
               width='400'
               dataField="Structures"
               caption="Structures">
               <Lookup
-                dataSource={headDataSource}
+                // dataSource={headDataSource}
                 valueExpr="ID"
                 displayExpr="Name" />
             </Column>

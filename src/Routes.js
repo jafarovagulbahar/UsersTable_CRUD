@@ -4,6 +4,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Table from './containers/Table';
 import Header from './containers/Header';
+import Structure from './containers/Table';
 
 const mainRoute = '/structure';
 
@@ -18,7 +19,7 @@ function Routes(props) {
         </Route>
 
         <Route path="/table">
-          <Table/>
+          <Structure/>
         </Route>
       </Switch>
     </Suspense>

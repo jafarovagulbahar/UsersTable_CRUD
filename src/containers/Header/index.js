@@ -5,7 +5,7 @@ export default function Header() {
     <div className="main-container">
       <div className="header-name">
         <span className="HeaderLogo">
-           <a href='table'>Getting Started</a>
+           <a href='/table'>Getting Started</a>
         </span>
         
       </div>
