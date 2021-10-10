@@ -9,7 +9,6 @@ function statusAction(data) {
 function renderSwitch(cellInfo) {
   return (
     <Switch
-      className="tree-list-switch"
       defaultValue={cellInfo.value}
       onValueChanged={(valueChangedEventArg) => {
         cellInfo.setValue(valueChangedEventArg.value)
