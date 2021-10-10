@@ -36,7 +36,7 @@ class Table extends React.Component {
                 e.data.parent_id = undefined
               }
             }}
-            showBorders={false}
+            showBorders={true}
             focusedRowEnabled={false}
             columnHidingEnabled={true}
           >

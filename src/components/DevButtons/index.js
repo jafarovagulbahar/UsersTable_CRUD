@@ -2,7 +2,7 @@ import { Column, Button } from "devextreme-react/tree-list"
 import './styles.sass'
 
 export const DevButtons = (
-  <Column type="buttons">
+  <Column type="buttons" width='400'>
     <Button name="add" icon="add" />
     <Button
       name="edit"
