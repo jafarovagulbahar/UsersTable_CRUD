@@ -4,9 +4,8 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Table from './containers/Table';
 import Header from './containers/Header';
-import Footer from './containers/Footer';
 
-const mainRoute = '/structure';
+const mainRoute = '/home';
 
 function Routes(props) {
   return (
@@ -14,11 +13,11 @@ function Routes(props) {
       <Switch>
         <Redirect exact from="/" to={mainRoute} />
         
-        <Route path="/structure">
+        <Route path="/home">
           <Header/>
         </Route>
 
-        <Route path="/table">
+        <Route path="/structure">
           <Table/>
         </Route>
       </Switch>

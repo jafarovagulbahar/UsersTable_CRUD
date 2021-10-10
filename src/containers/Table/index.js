@@ -16,8 +16,8 @@ class Table extends React.Component {
   render() {
     return (
       <div id="tree-list-demo">
-        <span className="HeaderLogo">
-          <a href='/structure'>{`${' < BACK TO'}`}</a>
+        <span className="btn">
+          <a href='/'>{`${' < Back To'}`}</a>
         </span>
         <div className='containers'>
 
@@ -38,7 +38,7 @@ class Table extends React.Component {
             }}
             showBorders={true}
             focusedRowEnabled={false}
-            columnHidingEnabled={true}
+            // columnHidingEnabled={true}
           >
   
             {DevTreeLIstFeatures}

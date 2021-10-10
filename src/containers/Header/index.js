@@ -1,11 +1,12 @@
 import React from "react";
+import './styles.sass'
 
 export default function Header() {
   return (
     <div className="main-container">
-      <div className="header-name">
-        <span className="HeaderLogo">
-           <a href='/table'>Getting Started</a>
+      <div className="btnContent">
+        <span className="btn">
+           <a href='/structure'>Getting Started</a>
         </span>
         
       </div>

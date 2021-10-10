@@ -54,7 +54,7 @@ function getFilteredData(options) {
 }
 
 export const DevMain = (
-  <Column dataField="parent_id" >
+  <Column dataField="parent_id" caption="Parent">
     <Lookup
       dataSource={getFilteredData}
       valueExpr="id"

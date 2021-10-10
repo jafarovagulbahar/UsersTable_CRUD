@@ -7,6 +7,7 @@ import {
     FilterRow,
     HeaderFilter,
 } from "devextreme-react/tree-list"
+import './styles.sass'
 
 const allowedPageSizes = [5, 10, 20]
 
