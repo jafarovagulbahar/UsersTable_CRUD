@@ -14,6 +14,17 @@ body
   justify-content: center
   padding: 60px
 
+#employees 
+	tbody
+		 tr 
+		  line-height: 0 !important
+		  padding: 0
+			td
+				line-height: 0 !important
+				padding: 0 
+	> div
+		line-height: 0
+		padding: 0
 .dx-toolbar-items-container
   padding: 30px
 
@@ -65,3 +76,19 @@ body
 		font-weight: 600
 		font-family: inherit
 		padding: 17px 100px
+
+.dx-editor-cell
+	text-align: center !important
+.dx-row.dx-freespace-row.dx-column-lines 
+	height: 24px !important
+.dx-row.dx-data-row.dx-row-lines.dx-column-lines
+	height: 24px !important
+.dx-treelist-rowsview .dx-texteditor-input
+	padding: 0 !important
+	min-height: 24px !important
+.dx-placeholder
+	&::before
+      padding: 0px 32px 0px !important
+.dx-treelist-text-content
+	line-height: 1 !important
+	padding-top: 3px

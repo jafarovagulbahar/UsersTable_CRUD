@@ -3,7 +3,9 @@ import { Template } from "devextreme-react/core/template"
 import Switch from "devextreme-react/switch"
 
 function statusAction(data) {
-  return data.data?.status ? "Active" : "Deactive"
+  return data.data?.status 
+  ? <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '24px' }}>Active</div> 
+  : <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '24px' }}>Deactive</div>
 }
 
 function renderSwitch(cellInfo) {

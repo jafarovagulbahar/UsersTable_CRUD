@@ -23,6 +23,7 @@ class Table extends React.Component {
 
           <TreeList
             id="employees"
+            autoExpandAll={true}
             dataSource={dataSource}
             showRowLines={true}
             columnAutoWidth={true}
@@ -40,7 +41,7 @@ class Table extends React.Component {
             focusedRowEnabled={false}
             // columnHidingEnabled={true}
           >
-  
+
             {DevTreeLIstFeatures}
             {DevName}
             {DevMain}
