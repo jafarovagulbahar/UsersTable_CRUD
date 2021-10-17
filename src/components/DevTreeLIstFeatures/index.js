@@ -3,8 +3,10 @@ import {
     Scrolling,
     Paging,
     Pager,
+    Selection,
     FilterPanel,
     FilterRow,
+    SearchPanel,
     HeaderFilter,
 } from "devextreme-react/tree-list"
 import './styles.sass'
@@ -13,9 +15,14 @@ const allowedPageSizes = [5, 10, 20]
 
 export const DevTreeLIstFeatures = [
 
-    <FilterRow visible={true} />,
-    <FilterPanel visible={true} />,
+    // <FilterRow visible={true} />,
+    // <FilterPanel visible={true} />,
+    // <HeaderFilter visible={true} />,
+    <SearchPanel
+    visible={true}
+    />,
     <HeaderFilter visible={true} />,
+    <Selection mode="single" />,
     <Scrolling
         mode="standard" />,
     <Paging
